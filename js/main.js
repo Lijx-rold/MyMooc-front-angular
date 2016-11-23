@@ -12,8 +12,9 @@ angular.module('app')
 
       // config
       $scope.app = {
-        name: 'Angulr',
+        name: 'Rold',
         version: '1.3.3',
+        server:'http://127.0.0.1:8080/',
         // for chart colors
         color: {
           primary: '#7266ba',
