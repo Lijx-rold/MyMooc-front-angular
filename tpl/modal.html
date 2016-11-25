@@ -1,15 +1,181 @@
 <div class="modal-header">
-    <h3 class="modal-title">Modal!</h3>
+    <h3 class="modal-title">修改角色</h3>
 </div>
 <div class="modal-body">
     <ul>
-        <li ng-repeat="item in items">
-            <a ng-click="selected.item = item">{{ item }}</a>
+        <li>
+            <div class="panel b-a">
+                <div class="panel-heading b-b b-light">
+                    <label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label>系统
+                </div>
+                <div class="panel-body">
+                    <div>
+                        <a class="btn m-r-md m-b-md btn-default" ui-toggle-class="button"
+                           ng-repeat="item in items | filter : {gid : 1}">
+                          <span class="text">
+                            <i class="fa fa-thumbs-up text-success"></i> {{item.description}}
+                          </span>
+                            <span class="text-active">
+                            <i class="fa fa-thumbs-down text-danger"></i> {{item.description}}
+                          </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="panel b-a">
+                <div class="panel-heading b-b b-light">
+                    <label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label>美工
+                </div>
+                <div class="panel-body">
+                    <div>
+                        <a class="btn m-r-md m-b-md btn-default" ui-toggle-class="button"
+                           ng-repeat="item in items | filter : {gid : 2}">
+                          <span class="text">
+                            <i class="fa fa-thumbs-up text-success"></i> {{item.description}}
+                          </span>
+                            <span class="text-active">
+                            <i class="fa fa-thumbs-down text-danger"></i> {{item.description}}
+                          </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="panel b-a">
+                <div class="panel-heading b-b b-light">
+                    <label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label>前端
+                </div>
+                <div class="panel-body">
+                    <div>
+                        <a class="btn m-r-md m-b-md btn-default" ui-toggle-class="button"
+                           ng-repeat="item in items  | filter : {gid : 3}">
+                          <span class="text">
+                            <i class="fa fa-thumbs-up text-success"></i> {{item.description}}
+                          </span>
+                            <span class="text-active">
+                            <i class="fa fa-thumbs-down text-danger"></i> {{item.description}}
+                          </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="panel b-a">
+                <div class="panel-heading b-b b-light">
+                    <label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label>后端
+                </div>
+                <div class="panel-body">
+                    <div>
+                        <a class="btn m-r-md m-b-md btn-default" ui-toggle-class="button"
+                           ng-repeat="item in items  | filter : {gid : 4}">
+                          <span class="text">
+                            <i class="fa fa-thumbs-up text-success"></i> {{item.description}}
+                          </span>
+                            <span class="text-active">
+                            <i class="fa fa-thumbs-down text-danger"></i> {{item.description}}
+                          </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="panel b-a">
+                <div class="panel-heading b-b b-light">
+                    <label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label>交互
+                </div>
+                <div class="panel-body">
+                    <div>
+                        <a class="btn m-r-md m-b-md btn-default" ui-toggle-class="button"
+                           ng-repeat="item in items  | filter : {gid : 5}">
+                          <span class="text">
+                            <i class="fa fa-thumbs-up text-success"></i> {{item.description}}
+                          </span>
+                            <span class="text-active">
+                            <i class="fa fa-thumbs-down text-danger"></i> {{item.description}}
+                          </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="panel b-a">
+                <div class="panel-heading b-b b-light">
+                    <label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label>维护
+                </div>
+                <div class="panel-body">
+                    <div>
+                        <a class="btn m-r-md m-b-md btn-default" ui-toggle-class="button"
+                           ng-repeat="item in items  | filter : {gid : 6}">
+                          <span class="text">
+                            <i class="fa fa-thumbs-up text-success"></i> {{item.description}}
+                          </span>
+                            <span class="text-active">
+                            <i class="fa fa-thumbs-down text-danger"></i> {{item.description}}
+                          </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="panel b-a">
+                <div class="panel-heading b-b b-light">
+                    <label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label>运营
+                </div>
+                <div class="panel-body">
+                    <div>
+                        <a class="btn m-r-md m-b-md btn-default" ui-toggle-class="button"
+                           ng-repeat="item in items  | filter : {gid : 7}">
+                          <span class="text">
+                            <i class="fa fa-thumbs-up text-success"></i> {{item.description}}
+                          </span>
+                            <span class="text-active">
+                            <i class="fa fa-thumbs-down text-danger"></i> {{item.description}}
+                          </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="panel b-a">
+                <div class="panel-heading b-b b-light">
+                    <label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label>市场
+                </div>
+                <div class="panel-body">
+                    <div>
+                        <a class="btn m-r-md m-b-md btn-default" ui-toggle-class="button"
+                           ng-repeat="item in items  | filter : {gid : 8}">
+                          <span class="text">
+                            <i class="fa fa-thumbs-up text-success"></i> {{item.description}}
+                          </span>
+                            <span class="text-active">
+                            <i class="fa fa-thumbs-down text-danger"></i> {{item.description}}
+                          </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </li>
     </ul>
     Selected: <b>{{ selected.item }}</b>
 </div>
-<div class="modal-footer">                  
+<div class="modal-footer">
     <button class="btn btn-default" ng-click="cancel()">Cancel</button>
     <button class="btn btn-primary" ng-click="ok()">OK</button>
 </div>
+
+
+<!--<ul>-->
+<!--<li ng-repeat="item in items">-->
+<!--<a ng-click="selected.item = item">{{ item }}</a>-->
+<!--</li>-->
+<!--</ul>-->
+

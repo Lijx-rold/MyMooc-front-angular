@@ -12,14 +12,13 @@ app.controller('SigninFormController', ['$scope', '$http', '$state', function ($
             method: 'POST',
             url: url,
             data: {
-                email: $scope.user.email,
+                username: $scope.user.name,
                 password: $scope.user.password
             },
             headers: {'Content-Type': 'application/json;charset=utf-8'}
         }).then(function (response) {
-            debugger
-            if (!response.data) {
-                $scope.authError = 'Email or Password not right';
+            if (response.success) {
+                $scope.authError = '用户名或密码错误，请重新输入';
             } else {
                 $state.go('app.dashboard-v1');
             }
