@@ -7,7 +7,7 @@ app.controller('SigninFormController', ['$scope', '$http', '$state', function ($
     $scope.authError = null;
     $scope.login = function () {
         $scope.authError = null;
-        var url = 'http://127.0.0.1:8080/mooc/login';
+        var url = 'http://127.0.0.1:8080/login';
         $http({
             method: 'POST',
             url: url,
